@@ -35,6 +35,7 @@
     <artifactId>camel-examples</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <name>Camel :: Karaf :: Examples</name>
 
     <modules>
         <module>camel-karaf-kar</module>
