@@ -37,6 +37,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>camel-karaf-kar</module>
         <module>camel-spring-cxf-code-first</module>
     </modules>
 
