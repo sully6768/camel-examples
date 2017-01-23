@@ -30,6 +30,7 @@ data
 /data/
 data/
 data/
+work/
 
 # OS Specific
 .DS_Store
