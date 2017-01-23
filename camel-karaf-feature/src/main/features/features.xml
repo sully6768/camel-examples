@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<features
+    name="features-${project.version}"
+    version="${project.version}">
+
+  <!-- A feature for the dependencies of the services -->
+    <feature
+        name="camelCBRDependencies"
+        version="${project.version}">
+        <feature>camel-core</feature>
+    </feature>
+  
+  <!-- Your services to install -->
+    <feature
+        name="camelCBR"
+        version="${project.version}">
+        <feature>camelCBRDependencies</feature>
+        <bundle>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundle>
+    </feature>
+
+</features>
