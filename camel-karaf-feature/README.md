@@ -1,5 +1,5 @@
-camel-cbr: Demonstrates the Camel CBR Pattern
-======================================================
+camel-cbr: Demonstrates the Camel CBR Pattern Using a Feature
+=============================================================
 Author: Fuse Team  
 Level: Beginner  
 Technologies: Camel, Spring, File  
@@ -43,15 +43,16 @@ Before building and running this quick start you need:
 Build and Deploy the Quickstart
 -------------------------
 
-1. Change your working directory to `camel-cbr` directory.
+* Change your working directory to `camel-cbr` directory.
 * Run `mvn clean install` to build the quickstart.
 * Start JBoss Fuse 6 by running bin/fuse (on Linux) or bin\fuse.bat (on Windows).
 * In the JBoss Fuse console, enter the following command:
 
-        osgi:install -s mvn:com.mycompany/camel-spring-cbr/1.0.0-SNAPSHOT
+    karaf@root> features:install mvn:org.jboss.fuse/camel-karaf-feature/1.0.0-SNAPSHOT/xml/features
 
+    karaf@root> features:install -v features:install camelCBR
+    The -v here stands for verbose and is optional.
 * Fuse should give you an id when the bundle is deployed
-
 * You can check that everything is ok by issuing  the command:
 
         osgi:list
@@ -84,5 +85,19 @@ To stop and undeploy the bundle in Fuse:
 1. Enter `osgi:list` command to retrieve your bundle id
 2. To stop and uninstall the bundle enter
 
-        osgi:uninstall <id>
+        features:uninstall camelCBR
+        
+Deploy Using Features:
+----------------------
+
+Further details on how to develop and deploy features can be found here: 
+ 
+    https://access.redhat.com/documentation/en/red-hat-jboss-fuse/6.3/paged/deploying-into-apache-karaf/chapter-8-deploying-features
+
+
+
+
+
+
+
  

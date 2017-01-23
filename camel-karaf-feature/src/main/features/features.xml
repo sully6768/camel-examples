@@ -9,6 +9,7 @@
         name="camelCBRDependencies"
         version="${project.version}">
         <feature>camel-core</feature>
+        <feature>camel-spring</feature>
     </feature>
   
   <!-- Your services to install -->
