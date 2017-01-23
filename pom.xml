@@ -39,7 +39,7 @@
 
     <modules>
         <module>camel-karaf-kar</module>
-        <module>camel-karaf-features</module>
+        <module>camel-karaf-feature</module>
         <module>camel-spring-cxf-code-first</module>
     </modules>
 

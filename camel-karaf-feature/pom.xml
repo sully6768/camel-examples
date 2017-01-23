@@ -8,7 +8,7 @@
     <artifactId>camel-karaf-feature</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
-    <name>Fuse CBR Quickstart</name>
+    <name>Camel :: Karaf :: Feature Example</name>
     <description>Camel :: Karaf :: Feature Example</description>
     <licenses>
         <license>
